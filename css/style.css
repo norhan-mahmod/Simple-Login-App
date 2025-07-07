@@ -1,0 +1,14 @@
+body{
+    background-color: #24353f;
+}
+section{
+    background-color: #24353f;
+    box-shadow: 0 0 15px 1px black;
+}
+::placeholder{
+    color: lightgray !important;
+}
+nav , div.card{
+    background-color: #24353f;
+    box-shadow: 0 0 30px 1px black;
+}
