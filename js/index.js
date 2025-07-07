@@ -64,7 +64,7 @@ function validateInput(input , regExp , errorMessage){
 }
 function Login(){
     var storedUsers = JSON.parse(localStorage.getItem("users"));
-    var isUserExist = storedUsers.find(function(user){
+    var isUserExist = storedUsers?.find(function(user){
       return user.email == emailInput.value && user.password == passwordInput.value;  
     });
     if(isUserExist)
