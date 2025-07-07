@@ -26,7 +26,7 @@ function register(){
         validateInput(passwordInput , nameOrPasswordRegExp, passwordErrorMessage)
     ){
         var storedUsers = JSON.parse(localStorage.getItem("users"));
-        var isUSerExist = storedUsers.find(function(user){
+        var isUSerExist = storedUsers?.find(function(user){
             return user.email == emailInput.value;
         });
         if(isUSerExist){
